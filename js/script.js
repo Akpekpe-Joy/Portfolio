@@ -2,8 +2,8 @@
 
 const typed = new Typed('.typing', {
     strings: [
-        'an IT Support Specialist', 
         'an instructor',
+        'an IT Support Specialist', 
         'an ICT Coordinator',
         'a Web Content Administrator / Web Support Assistant',
         'a Data Entry Officer / Digital Admin Assistant'
