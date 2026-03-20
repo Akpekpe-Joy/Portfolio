@@ -425,7 +425,7 @@
         const form = document.querySelector('.contact-form');
         let submitting = false;
         form.addEventListener('submit', function (e){
-            
+              e.preventDefault();
             if(submitting) return;
             submitting = true;
 
@@ -438,7 +438,9 @@
 
             })
             .then(() => {
-                window.location.href = 'thank_you.html';
+                setTimeout(() => {
+                    window.location.href = 'thank_you.html';
+                }, 300);
             })
             .catch(() => {
                 submitting = false;
